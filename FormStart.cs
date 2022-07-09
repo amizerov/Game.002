@@ -19,7 +19,7 @@ namespace Game._002
             else
             {
                 lblErrorValidate.Text = "Ошибка Валидации! Заполните поля!";
-                Task.Run(() => MarkInalid());
+                Task.Run(() => MarkInvalid());
             }
         }
         bool ValidateData()
@@ -40,7 +40,7 @@ namespace Game._002
             return validate == 0;
         }
 
-        void MarkInalid()
+        void MarkInvalid()
         {
             while(validate > 0)
             {
